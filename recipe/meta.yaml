@@ -1,5 +1,5 @@
 {% set name = "mixsea" %}
-{% set version = "0.1.0" %}
+{% set version = "0.1.1" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: be00d2f84bbe7217debe5c1a0b7dd4e231f9778a01843ee3cb6dbeca1793105b
+  sha256: 4158c89aa043e5e98eb0ac96aef44982cd8d6fba57b3b13e8aed0f3b8fc90042
 
 build:
   number: 0
