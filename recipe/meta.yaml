@@ -1,5 +1,5 @@
 {% set name = "mixsea" %}
-{% set version = "0.1.2" %}
+{% set version = "0.2.0" %}
 
 
 package:
@@ -8,10 +8,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: f1e0c1830c5242d4626e66cf1fb5f23bd8d1e16b88731275efe0f890bb367a48
+  sha256: 8f4b83886ef15b3ec9e321e99c95ce5440081e11fa71c0fa29a2f05a83020635
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
@@ -22,9 +22,9 @@ requirements:
     - pip
   run:
     - python >={{ python_min }}
-    - numpy
-    - gsw
-    - scipy
+    - numpy >=2
+    - gsw >=3.6
+    - scipy >=1.6.0
 
 test:
   imports:
